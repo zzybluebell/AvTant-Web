@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phychant -- TO MOVE! TO SPEAK! TO MAKE!</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- aos 包 -->
+    <link rel="stylesheet" href="aos/aos.css">
+    <script src="aos/aos.js"></script>
+    <!-- 样式清空 -->
+    <link rel="stylesheet" href="css/initialization.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- content -->
+    <link rel="stylesheet" href="css/content.css">
+    <!-- Vue 包 -->
+    <script src='Vue/vue.js'></script>
+    <!-- 加载动画 -->
+    <link rel="stylesheet" href="css/Loading.css">
+</head>
+
+<body>
+    <!-- 加载动画 -->
+    <div id="Load-animation">
+        <div>
+            <span id="Load-animation-span">
+            Loading...
+              </span>
+        </div>
+    </div>
+    <script src="js/Loading.js"></script>
+    <header id="Head">
+        <nav :class="{nav: flag, navTow: NavLiUl, navThree: NavLiUl}">
+            <!-- <div class="navFilter">asf</div> -->
+            <img :src="logoUrl" alt="" :class="{Logo: flag}">
+            <div @click="navDiv" :class="{NavDivTow: NavLiUl, NavDivThree: flagUl}">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul :class="{navUl: flagUl, navUlTow: NavLiUl}">
+                <span @click="navDiv" :class="{NavUlSpan: NavLiUl}">》</span>
+                <li @click="navA(0)" class="navLi"><a href="#" id="index" :class="{NavLi: NavLiUl, navThree: flag, navFour: NavLiUl}" class="navA">Home</a></li>
+                <li @click="navA(1)"><a href="#CONCEPT" :class="{NavLi: NavLiUl, navThree: flag, navFour: NavLiUl}" class="navA">Concept</a></li>
+                <li @click="navA(2)"><a href="#APPLICATION" :class="{NavLi: NavLiUl, navThree: flag, navFour: NavLiUl}" class="navA">Product</a></li>
+                <li @click="navA(3)"><a href="#PRICING" :class="{NavLi: NavLiUl, navThree: flag, navFour: NavLiUl}" class="navA">Pricing</a></li>
+                <li @click="navA(4)"><a href="#CONTACT" :class="{NavLi: NavLiUl, navThree: flag, navFour: NavLiUl}" class="navA">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <div id="headDivBackground" :style="[styleObj1]">
+                <div>
+                    <img src="images/bannerFont.png" alt="">
+                </div>
+                <h3>TO MOVE! TO SPEAK! TO MAKE!</h3>
+                <!--
+                <p @click="videoPlay()" id="VideosFlag" title="观看视频请用PC">
+                    <img src="images/Icon-video.png" alt="">
+                    <span>watch video</span>
+                </p>
+-->
+                <!-- <video autoplay="autoplay" loop="loop" muted :class="{ HeadBannerVideo: HeadBannerVideoFlag }">
+                  <source src="videos/ATM.mp4" type="video/mp4">
+                  您的浏览器不支持 video 标签。
+                </video> -->
+                <i class="bannerPCTow" :class="{ HeadBannerVideo: HeadBannerVideoFlag }"></i>
+            </div>
+            <div id="headDivVideo">
+                <button class="headDivVideoBtn" @click="videoPlayTow()">Back</button>
+                <video controls>
+                  <source src="videos/GT.mp4" type="video/mp4">
+                  <source src="" type="video/ogg">
+                  您的浏览器不支持 video 标签。
+                </video>
+            </div>
+            <div>
+                <div :class="{ HeadBannerImg: HeadBannerVideoFlag }" class="HeadBannerImgTow"></div>
+    </header>
+    <div id="content">
+        <div :class="{backgroundImg: Sponsor}" style="height: 100%; margin-bottom: 0;">
+            <img src="images/backgroundTow.png" alt="" id="backgroundTow" data-aos="zoom-in">
+            <img src="images/backgroundOne.png" alt="" id="backgroundOne" data-aos="zoom-in">
+            <img src="images/backgroundOne.png" alt="" id="backgroundThree" data-aos="zoom-in">
+            <img src="images/backgroundTow.png" alt="" id="backgroundFour" data-aos="zoom-in">
+
+            <img src="images/backgroundOne.png" alt="" id="backgroundFive" data-aos="zoom-in">
+            <img src="images/backgroundTow.png" alt="" id="backgroundSix" data-aos="zoom-in">
+            <img src="images/backgroundOne.png" alt="" id="backgroundSeven" data-aos="zoom-in">
+            <img src="images/backgroundTow.png" alt="" id="backgroundEight" data-aos="zoom-in">
+            <img src="images/backgroundOne.png" alt="" id="backgroundNine" data-aos="zoom-in">
+            <img src="images/backgroundImg3.png" alt="" id="backgroundelEighteen">
+        </div>
+        <div id="BACKGROUND" data-aos="zoom-in">
+            <h1>BACKGROUND</h1>
+            <ul>
+                <li>
+                    <h3 v-cloak> {{ BACKGROUNDOne }} </h3>
+                    <span>nearly citizens have Stroke per year</span>
+                </li>
+                <li>
+                    <h3 v-cloak> {{ BACKGROUNDTow }} </h3>
+                    <span>nearly citizens have Amyotrophic Lateral Sclerosis pear year</span>
+                </li>
+                <li>
+                    <h3 v-cloak> {{ BACKGROUNDThree }} </h3>
+                    <span>nearly citizens have Cerebral Palsy per year</span>
+                </li>
+            </ul>
+            <p>
+                The above data is
+                <mark>only part of </mark> people with Physical Disability and Speech Difficulties (
+                <mark>PDSD</mark> ) in Singapore, there are still many people who cause PDSD due to other diseases or accidents in all over the world.
+            </p>
+        </div>
+        <div id="CONCEPT" data-aos="zoom-in" class="box">
+            <h1>CONCEPT</h1>
+            <ul>
+                <li>
+                    <img src="images/CONCEPTImg1.png" alt="">
+                    <p>Communication Barrier</p>
+                </li>
+                <li>
+                    <img src="images/CONCEPTImg2.png" alt="">
+                    <p>High Cost</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/CONCEPTImg3.png" alt="">
+                    <p>Troublesome Usage Product in Current Market</p>
+                </li>
+                <li>
+                    <img src="images/CONCEPTImg4.png" alt="">
+                    <p>The Great burden on the Family of PDSD</p>
+                </li>
+            </ul>
+            <p>To solve all issues! </p>
+            <p>The assitive friend for you (PDSD), family and theripist.</p>
+            <h2>Phychant! is coming soon!</h2>
+        </div>
+        <div id="BENEFITS" data-aos="fade-up">
+            <h1>BENEFITS</h1>
+            <ul>
+                <li>
+                    <img src="images/BENEFITSImg1.png" alt="">
+                    <span>Cross Platform</span>
+                    <p>85% Android and 81% iOS user</p>
+                </li>
+                <li>
+                    <img src="images/BENEFITSImg2.png" alt="">
+                    <span>High Scalability</span>
+                    <p> integration with mainstream social apps</p>
+                </li>
+                <li>
+                    <img src="images/BENEFITSImg3.png" alt="">
+                    <span>Simple Operations</span>
+                    <p> only needs eyes or two muscles to communicate</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/BENEFITSImg4.png" alt="">
+                    <span>Low Price</span>
+                    <p>no more than S$200 per year</p>
+                </li>
+                <li>
+                    <img src="images/BENEFITSImg5.png" alt="">
+                    <span>Lighten the Burden on Family</span>
+                    <p> increase emotional communication with family</p>
+                </li>
+                <li>
+                    <img src="images/BENEFITSImg6.png" alt="">
+                    <span>Easy Communication</span>
+                    <p> automatically search nearby people</p>
+                </li>
+            </ul>
+        </div>
+        <div id="OURCOMMUNITY">
+            <h1 data-aos="fade-down">OUR COMMUNITY</h1>
+            <ul>
+                <li data-aos="fade-down">
+                    <img src="images/OURCOMMUNITYImg1.png" alt="">
+                    <span>People with PDSD</span>
+                    <p>the people who cause Physical Disability and Speech difficulties due to diseases or accidents</p>
+                </li>
+                <li data-aos="fade-down">
+                    <img src="images/OURCOMMUNITYImg2.png" alt="">
+                    <span>Caregivers</span>
+                    <p>The family members friends or young people with great interest in improving PDSD well-being</p>
+                </li>
+                <li data-aos="fade-down">
+                    <img src="images/OURCOMMUNITYImg3.png" alt="">
+                    <span>NGOs</span>
+                    <p>Singapore based NGOs which we have connected with to further improve well-being of PDSD</p>
+                </li>
+            </ul>
+        </div>
+        <div id="APPLICATION" data-aos="zoom-in" class="box">
+            <h1>APPLICATION</h1>
+            <div>
+                <img src="images/APPLICATIONImg1.png" alt="">
+                <div>
+                    <img src="images/APPLICATIONImg2.png" alt="">
+                    <p>The mobile application with muscle sensor kits (Phychant-Kit).</p>
+                </div>
+            </div>
+            <p>To allow the Physical Disability and Speech Difficulties effectively communicate with anyone at anywhere</p>
+        </div>
+        <div id="TECHNOLOGY" data-aos="fade-in">
+            <h1>TECHNOLOGY</h1>
+            <ul>
+                <li>
+                    <img src="images/TECHNOLOGYImg1.png" alt="">
+                    <span>Speech to Text & Text to Speech</span>
+                    <span> </span>
+                </li>
+                <li>
+                    <img src="images/TECHNOLOGYImg2.png" alt="">
+                    <span>Object Detection</span>
+                </li>
+                <li>
+                    <img src="images/TECHNOLOGYImg3.png" alt="">
+                    <span>Smart Answering</span>
+                </li>
+                <li>
+                    <img src="images/TECHNOLOGYImg4.png" alt="">
+                    <span>Eye Tracking</span>
+                </li>
+                <li>
+                    <img src="images/TECHNOLOGYImg5.png" alt="">
+                    <span>T2 predictive Word Recommendation</span>
+                </li>
+            </ul>
+            <img src="images/TECHNOLOGYImgBig.png" alt="">
+        </div>
+        <div id="PRODUCTSHOW" data-aos="fade-in">
+            <h1>PRODUCT SHOW</h1>
+            <!-- <video controls poster="images/PRODUCTSHOWImg1.png">
+                <source src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" type="video/mp4">
+            </video> -->
+            <iframe src="https://www.youtube.com/embed/HdSLvCTpWX0" title="Final Demo Explanation (Phythant)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="PRICING" class="box">
+            <h1 data-aos="fade-in">PRICING</h1>
+            <div>
+                <ul data-aos="fade-in">
+                    <li>
+                        <p>Community </p>
+                        <span>FREE</span>
+                    </li>
+                    <li>
+                        <p>Each function is free within limited times in each day</p>
+                        <p>It is only allowed <br>communication with backend AI Chatbot</p>
+                    </li>
+                </ul>
+                <ul data-aos="fade-in">
+                    <li>
+                        <p>Enterprise (SaaS) </p>
+                        <span>
+                            $ 19.99 <br>
+                            /mo
+                        </span>
+                    </li>
+                    <li>
+                        <p>Including all community editions</p>
+                        <p>It is able to make a connection with each peers, and each function is charged as service</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="TEAM" data-aos="fade-in">
+            <h1>TEAM</h1>
+            <div>
+                <div>
+                    <img src="images/ZhangZhiyao.png" alt="">
+                    <h3>Zhang Zhiyao</h3>
+                    <span>Research Assistant in NUS-Singtel Laboratory</span>
+                    <span>National University of Singapore</span>
+                    <span>Bachelor of Computing (Honors)</span>
+                    <span>Degree in Computer Science &</span>
+                    <span>Second Major in Mathematics</span>
+                    <span>Focus area: </span>
+                    <span>Artificial Intelligence,</span>
+                    <span>Robotics, Microcontroller</span>
+                </div>
+                <div>
+                    <img src="images/HuJiajun.png" alt="">
+                    <h3>Hu Jiajun</h3>
+                    <span>Research Assistant in NUS-Budslab Laboratory</span>
+                    <span>National University of Singapore</span>
+                    <span>Bachelor of Computing (Honors)</span>
+                    <span>Degree in Computer Science & </span>
+                    <span>Second Major in Economics</span>
+                    <span>Focus area: </span>
+                    <span>Graph Design, Cybersecurity</span>
+                    <span>Software Engineering</span>
+                </div>
+            </div>
+        </div>
+        <div id="SUPPORTER" data-aos="fade-in">
+            <h1>SUPPORTER</h1>
+            <div id="SUPPORTERPeople">
+                <ul>
+                    <li>
+                        <img src="images/SUPPORTERImg.png" alt="">
+                        <h3>Bimlesh Wadhwa</h3>
+                        <p v-cloak><a href="#">Associate Professor & Assistant Dean</a></p>
+                        <span>School of Computing, NUS</span>
+                    </li>
+                    <li>
+                        <img src="images/SUPPORTERImg2.png" alt="">
+                        <h3>Susan Rickard Liow Jane</h3>
+                        <p v-cloak><a href="#">Professor & Director</a></p>
+                        <span>Departments of Otolaryngology/Psychology, NUS</span>
+                    </li>
+                    <li>
+                        <img src="images/SUPPORTERImg3.png" alt="">
+                        <h3>Lai Kim Fatt</h3>
+                        <p v-cloak><a href="#">Professor & Independent Director </a></p>
+                        <span>School of Computing, NUS</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="images/SUPPORTERImg4.png" alt="">
+                        <h3>Navin Nair</h3>
+                        <p v-cloak><a href="#">Inclusion Ambassador</a></p>
+                        <span>Disabled People Association (DPA)</span>
+                    </li>
+                    <li>
+                        <img src="images/SUPPORTERImg5.png" alt="">
+                        <h3>Tay Yue Er Joel</h3>
+                        <p v-cloak><a href="#">Speech and Voice Therapist</a></p>
+                        <span>School of Medicine, NUS</span>
+                    </li>
+                    <li>
+                        <img src="images/SUPPORTERImg6.png" alt="">
+                        <h3>Iskandar Shah</h3>
+                        <p v-cloak><a href="#">Executive Director</a></p>
+                        <span>Disabled People Association (DPA)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="SUPPORTERSponsor" :class="{SUPPORTERSponsor2: Sponsor}">
+                <div class="certificate">
+                    <img src="images/zhengshuTow.png" alt="">
+                </div>
+                <div class="trademark">
+                    <ul>
+                        <li>
+                            <img src="images/trademark1.png" alt="">
+                            <img src="images/trademark2.png" alt="">
+                            <img src="images/trademark3.png" alt="">
+                            <img src="images/trademark4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/trademark5.png" alt="">
+                            <img src="images/trademark6.png" alt="">
+                            <img src="images/trademark7.png" alt="">
+                            <img src="images/trademark8.png" alt="">
+                            <img src="images/trademark9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="TESTER">
+            <h1 data-aos="fade-in">TESTER</h1>
+            <ul data-aos="fade-in">
+                <li class="TESTERLi" :Class="{TESTERLi2: Sponsor}">
+                    <div :Class="{TESTERImg2: Sponsor}" class="TESTERLiDiv">
+                        <img src="images/TESTER1.png" alt="" class="TESTERImg">
+                        <p class="TESTERP">I type very slow and make me difficult to communicate with others. This product allows me to express myself faster!</p>
+                    </div>
+                    <div :Class="{TESTERImg2: Sponsor}" class="TESTERLiDiv">
+                        <img src="images/TESTER2.png" alt="" class="TESTERImg">
+                        <p class="TESTERP">I have many friends with communication difficulties, I think this product is very suitable for them!</p>
+                    </div>
+                    <div :Class="{TESTERImg2: Sponsor}" class="TESTERLiDiv">
+                        <img src="images/TESTER3.png" alt="" class="TESTERImg">
+                        <p class="TESTERP">This product allows me to understand my husband's needs much faster and more precise!</p>
+                    </div>
+                </li>
+            </ul data-aos="fade-in">
+            <div class="SUPPORTERSponsor SUPPORTERSponsor2" :class="{SUPPORTERSponsor3: Sponsor}" data-aos="fade-in">
+                <div class="certificate" :class="{SUPPORTERDivr3: Sponsor}">
+                    <img src="images/zhengshuTow.png" alt="" :class="{SUPPORTERImg3: Sponsor}">
+                </div>
+                <div class="trademark">
+                    <ul>
+                        <li>
+                            <img src="images/trademark1.png" alt="">
+                            <img src="images/trademark2.png" alt="">
+                            <img src="images/trademark3.png" alt="">
+                            <img src="images/trademark4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/trademark5.png" alt="">
+                            <img src="images/trademark6.png" alt="">
+                            <img src="images/trademark7.png" alt="">
+                            <img src="images/trademark8.png" alt="">
+                            <img src="images/trademark9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="NEWS" data-aos="fade-in">
+            <h1>NEWS</h1>
+            <ul>
+                <li>
+                    <a>2021 Jan</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Approached with Handicaps Welfare Association (HWA), get with their supports and have a partnership with them.</span>
+                    </p>
+                </li>
+                <li>
+                    <a>2020 Nov</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Awarded in Gold Medal from Global Student Innovation Chanllenge sponsored by Coalition of Rehabilitation Engineering and Assistive Technology, Asia (i-CREATe), and get with their supports.</span>
+                    </p>
+                </li>
+                <li>
+                    <a>2020 Oct</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Awarded in Champion from Splash Award sponsored by Singapore Computer Society (SCS), and get with their supports.</span>
+                    </p>
+                </li>
+                <li>
+                    <a>2019 Sept</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Approached with Disability People's Association (DPA), get with their supports and have a partnership with them.</span>
+                    </p>
+                </li>
+                <li>
+                    <a>2019 Aug</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Awarded in Silver Medal (the best of the year) in Tan Kah Kee Young Inventors Award, and endorsed by Tan Kah Kee Foundation.</span>
+                    </p>
+                </li>
+                <li>
+                    <a>2019 July</a>
+                    <span>
+                    <span class="rectangle"></span>
+                    <span class="circular"></span>
+                    <span class="rectangle"></span>
+                    </span>
+                    <p>
+                        <span></span>
+                        <span>Engaged outstanding collaboration award achievement with Enactus Singapore, get with supports and collaborations.</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div id="CONTACT" data-aos="fade-in" class="box">
+            <h1>CONTACT</h1>
+            <ul>
+                <li>
+                    <img src="images/CONTACTImg1.png" alt="" title="这是地址">
+                    <img src="images/CONTACTImg2.png" alt="" title="这是地址">
+                    <img src="images/CONTACTImg3.png" alt="" title="这是地址">
+                    <img src="images/CONTACTImg4.png" alt="" title="这是地址">
+                    <img src="images/CONTACTImg5.png" alt="" title="这是地址">
+                </li>
+            </ul>
+            <p>phychant@gmail.com</p>
+        </div>
+        <div id="LOCATION" data-aos="fade-in">
+            <h1>LOCATION</h1>
+            <div>
+                <span>
+          <img src="images/LOCATIONIcon.png" alt="">
+          <span>COM 2, 15 Computing Dr, Singapore 117418</span>
+                </span>
+                <img src="images/LOCATIONImg1.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var vm = new Vue({
+        el: "#Head",
+        data: {
+            logoUrl: 'images/logo.png',
+            VD: true,
+            flag: false,
+            flagUl: false,
+            NavLiUl: false,
+            scroll: '0',
+            video1: document.getElementsByTagName('video')[0],
+            screenWidth: 0,
+            VideosFlag: document.getElementById('VideosFlag'),
+            HeadBannerVideoFlag: false,
+            HeadDivVideoFlag: true,
+            HeadDivVideoFlag2: true,
+            styleObj1: {
+                display: 'flex'
+            }
+        },
+        methods: {
+            navA(index) {
+                let navLi = document.getElementsByClassName('navA');
+                for (var i = 0; i < navLi.length; i++) {
+                    navLi[i].style.borderBottom = 'none';
+                }
+                if (index == 0) {
+                    navLi[index].style.borderBottom = '2px solid #fff';
+                } else {
+                    navLi[index].style.borderBottom = '2px solid #000';
+                }
+            },
+            scrollDs() {
+                this.scroll = document.documentElement.scrollTop;
+                if (this.scroll > 50) {
+                    this.flag = true;
+                    if (this.scroll > 1100) {
+                        this.NavLiUl = true;
+                        this.logoUrl = 'images/logoBlack.png';
+                    }
+                } else {
+                    if (this.flagUl == true) {
+                        this.flag = true;
+                    } else {
+                        this.flag = false;
+                    }
+                }
+                if (this.scroll < 900) {
+                    this.NavLiUl = false;
+                    this.logoUrl = 'images/logo.png';
+                }
+            },
+            navDiv() {
+                if (this.flagUl == false) {
+                    this.flagUl = true;
+                } else {
+                    this.flagUl = false;
+                    if (this.scroll > 50) {
+                        this.flag = true;
+                    } else {
+                        this.flag = false;
+                    }
+                }
+            },
+            winWdth() {
+                this.screenWidth = document.body.clientWidth;
+                if (this.screenWidth > 1100) {
+                    this.HeadDivVideoFlag2 = true,
+                        this.HeadBannerVideoFlag = false;
+                    this.flagUl = false;
+                    this.NavLiUl = false;
+                    this.flag = false;
+                } else {
+                    this.HeadBannerVideoFlag = true;
+                }
+            },
+            videoPlay() {
+                document.getElementsByTagName('video')[0].play();
+                // document.getElementsByTagName('video')[1].play();
+                document.getElementById('headDivBackground').style.display = 'none';
+                document.getElementById('headDivVideo').style.display = 'block';
+                this.HeadBannerVideoFlag = false;
+            },
+            videoPlayTow() {
+                document.getElementsByTagName('video')[0].pause();
+                // document.getElementsByTagName('video')[1].pause();
+                document.getElementById('headDivBackground').style.display = 'flex';
+                document.getElementById('headDivVideo').style.display = 'none';
+                this.screenWidth = document.body.clientWidth;
+                if (this.screenWidth < 1100) {
+                    this.HeadBannerVideoFlag = true;
+                }
+            }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.scrollDs, true);
+            window.addEventListener('resize', this.winWdth, true);
+        }
+    })
+</script>
+<script>
+    let vmTow = new Vue({
+        el: '#content',
+        data: {
+            BACKGROUNDOne: 0,
+            BACKGROUNDTow: 0,
+            BACKGROUNDThree: 0,
+            IanALink: 'i am a link click me jump',
+            screenWidth: 0,
+            Sponsor: true,
+            time: null,
+            styleObj1: {
+                display: 'flex',
+                'flex-direction': 'column'
+            },
+            styleObj2: {
+                width: '80%',
+                'margin-bottom': '40px'
+            },
+            styleObj3: {}
+        },
+        methods: {
+            NumberBeat() {
+                if (this.BACKGROUNDOne < 16920) {
+                    this.BACKGROUNDOne += 100;
+                }
+                if (this.BACKGROUNDTow < 400) {
+                    this.BACKGROUNDTow += 5;
+                }
+                if (this.BACKGROUNDThree < 18048) {
+                    this.BACKGROUNDThree += 100;
+                }
+                if (this.BACKGROUNDOne >= 16400 && this.BACKGROUNDTow >= 400 && this.BACKGROUNDThree >= 18048) {
+                    this.BACKGROUNDOne = 16920
+                    this.BACKGROUNDTow = 400
+                    this.BACKGROUNDThree = 18048
+                    this.NumberBeatThree()
+                }
+            },
+            NumberBeatTow() {
+                this.BACKGROUNDOne = 0;
+                this.BACKGROUNDTow = 0;
+                this.BACKGROUNDThree = 0;
+                if (this.BACKGROUNDThree == 0 && this.BACKGROUNDTow == 0 && this.BACKGROUNDThree == 0) {
+                    this.time = setInterval(this.NumberBeat, 100)
+                }
+            },
+            NumberBeatThree() {
+                clearInterval(this.time)
+                setTimeout(this.NumberBeatTow, 5000)
+            }
+        },
+        mounted() {
+            this.time = setInterval(this.NumberBeat, 100)
+            this.screenWidth = document.body.clientWidth;
+            if (this.screenWidth < 1100) {
+                this.IanALink = 'i am a link';
+                this.Sponsor = true;
+            } else {
+                this.IanALink = 'i am a link click me jump';
+                this.Sponsor = false;
+            }
+            window.onresize = () => {
+                this.screenWidth = document.body.clientWidth;
+                if (this.screenWidth < 1100) {
+                    this.IanALink = 'i am a link';
+                    this.Sponsor = true;
+                } else {
+                    this.IanALink = 'i am a link click me jump';
+                    this.Sponsor = false;
+                }
+            }
+        }
+
+    })
+</script>
+<script>
+    // AOS 动画 初始化
+    AOS.init({
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init', //类的初始化后应用
+            animatedClassName: 'aos-animate', //应用在动画类
+            useClassNames: true, //如果为true，将在滚动上作为类添加`data-aos'的内容
+            disableMutationObserver: true, //禁用自动突变的检测（高级）
+            debounceDelay: 50, //调整窗口大小时使用的
+            throttleDelay: 99, //滚动页面时使用的油门延迟（高级）
+
+            offset: 150, // 
+            delay: 0, // 触发延迟
+            duration: 1500, // 动画时长
+            easing: 'ease-out', // AOS动画的默认缓动
+            once: false,
+            mirror: true,
+            anchorPlacement: 'top-bottom',
+        })
+        // 标签控制方法
+        // <div
+        //     data-aos="fade-up"
+        //     data-aos-offset="200"
+        //     data-aos-delay="50"
+        //     data-aos-duration="1000"
+        //     data-aos-easing="ease-in-out"
+        //     data-aos-mirror="true"
+        //     data-aos-once="false"
+        //     data-aos-anchor-placement="top-center"
+        // >
+        // </div>
+</script>
+<script>
+    var box = document.getElementsByClassName('box');
+    var box2 = document.getElementsByClassName('navA');
+    document.addEventListener('scroll', function() {
+
+        //滚动条高度+视窗高度 = 可见区域底部高度
+        var visibleBottom = window.scrollY + document.documentElement.clientHeight;
+        //可见区域顶部高度
+        var visibleTop = window.scrollY;
+        for (var i = 0; i < box.length; i++) {
+            var centerY = box[i].offsetTop + (box[i].offsetHeight / 2);
+            if (centerY > visibleTop && centerY < visibleBottom) {
+                if (i == 0) {
+                    box2[i].style.borderBottom = "2px solid #fff";
+                } else {
+                    box2[i].style.borderBottom = "2px solid #000";
+                }
+            } else {
+                box2[i].style.borderBottom = "none";
+            }
+        }
+    })
+</script>

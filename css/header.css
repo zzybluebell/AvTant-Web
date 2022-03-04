@@ -1,0 +1,373 @@
+/*
+* @Author: 一腔孤勇
+* @Date:   2021-03-20 00:12:49
+* @Last Modified by:   一腔孤勇
+* @Last Modified time: 2021-03-24 20:29:59
+*/
+/*头部*/
+header{
+  width: 100%;
+  height: 100%;
+  background: url(../images/Background.png) no-repeat center;
+  background-size: cover;
+}
+/*导航栏*/
+header>nav{
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 0.3s;
+  padding: 10px;
+  background: none;
+  box-shadow: none;
+}
+.nav{
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 1px #ababab;
+}
+.navTow{
+  background: rgba(255,255,255,0.5);
+  color: #000;
+  overflow: hidden;
+}
+.navTow::before{
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    background: url("../images/filter.png") 0 / cover fixed;
+    z-index: -1;
+    margin: -30px;
+}
+.navThree{
+}
+.navFour{
+  color: #000;
+}
+
+.navFilter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+  opacity: 0.5;
+  display: block;
+  background: #fff;
+}
+header>nav>img{
+  width: 5%;
+  height: auto;
+}
+header>nav>ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navLi>a{
+  border-bottom: 2px solid #fff;
+}
+header>nav>ul>li{
+  padding: 10px;
+}
+header>nav>ul>p{
+  display: none;
+}
+header>nav>ul>span{
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+header>nav>ul>li>a{
+  color: #fff;
+  transition: 0.3s;
+  font-family: 'PingFangMedium';
+}
+header>nav>ul>li:first-child>a{
+  border-bottom: 2px solid #000;
+}
+header>nav>ul>li>a:hover{
+  border-bottom: 2px solid #000;
+}
+header>nav>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header>nav>div>span{
+  margin: 3px 0;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+}
+/*banner*/
+#Head>div{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+#headDivBackground{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+#headDivBackground>img:last-child{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #000;
+}
+#headDivBackground>img:first-child{
+  position: relative;
+  z-index: 3;
+}
+#headDivBackground>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 998;
+  margin-bottom: 50px;
+}
+#headDivBackground>div>img{
+  width: 100%;
+  height: auto;
+}
+#headDivBackground>div>h1>span:first-child{
+  margin-bottom: -66px;
+  margin-left: -26px;
+  font-size: 60px;
+}
+#headDivBackground>div>p{
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: -0.8rem;
+  position: relative;
+  z-index: 998;
+}
+#headDivBackground>div mark{
+  background: rgba(0,0,0,0);
+  color: #fff;
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: -18px;
+  margin-right: -40px;
+  background-image: linear-gradient(135deg,#37BE81,#50F2A8);
+  -webkit-background-clip:text;
+  color: transparent;
+}
+#headDivBackground>h3{
+  font-weight: 500;
+  position: relative;
+  z-index: 997;
+  font-family: 'PingFangSC-Semibold';
+  text-align: center;
+}
+#headDivBackground>p{
+  position: relative;
+  z-index: 997;
+  margin-top: 20px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'PingFangRegular';
+}
+#headDivBackground>p>img{
+  width: 10%;
+  height: auto;
+  margin-right: 20px;
+}
+#headDivBackground>video{
+  background: #000;
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 992;
+}
+.bannerPCTow{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 992;
+  background: url(../images/bannerPC.png) no-repeat center;
+  background-size: cover;
+}
+.HeadBannerVideo{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.HeadBannerImgTow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/Background.png) no-repeat center;
+  background-size: cover;
+  display: none;
+}
+.HeadBannerImg{
+  display: flex;
+}
+.headDivVideoBtn{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  z-index: 990;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+#headDivVideo>video{
+  width: 100%;
+  height: 100%;
+}
+#headDivVideo{
+  width: 100%;
+  height: 100%;
+  display: none
+}
+@media screen and (max-width: 1100px) {
+  .navTow{
+    overflow: visible;
+  }
+  .navTow::before{
+    display: none;
+  }
+  header>nav>img{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+  }
+  header>nav>div>span{
+    margin: 10px;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+  }
+  header>nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header>nav>ul{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    transition: 0.3s;
+    background: rgba(255,255,255,1);
+  }
+  #headDivBackground>p>span{
+    font-size: 1.6rem;
+  }
+  #headDivBackground>p>img{
+    width: 16%;
+  }
+  header>nav>ul>li{
+    margin-bottom: 20px;
+  }
+/*  header>nav>ul>p{
+    display: block;
+  }*/
+  header>nav>ul>span{
+    display: block;
+    background: rgba(203,231,239,0.5);
+    cursor: pointer;
+  }
+  .NavUlSpan{
+    background:  rgba(68,96,163,0.5);
+  }
+  #index{
+    border-bottom: 2px solid #000;
+  }
+  header>nav>ul>p>a{
+    padding-left: 10px;
+    color: #000;
+    text-align: left;
+  }
+  header>nav>ul>li>a{
+    color: #000;
+  }
+  header>nav>ul>li>a:hover{
+    border-bottom: 2px solid #000;
+  }
+  .NavDivTow{
+    padding: 5px;
+    border: 5px solid #dbf7fe;
+    background: #fff;
+  }
+  .NavDivThree{
+    display: none;
+  }
+  .NavDivTow>span{
+    background: #000;
+  }
+  .navThree{
+    background: none;
+    box-shadow: none;
+  }
+  .navUl{
+    right: 0;
+  }
+  .navUlTow{
+    width: auto;
+    background: rgba(0,0,0,0.5);
+  }
+  .NavLi{
+    color: #Fff;
+  }
+  .Logo{
+    opacity: 0;
+  }
+  header>nav>div{
+    display: flex;
+  }
+}
+@media screen and (max-width: 1100px) {
+    
+}

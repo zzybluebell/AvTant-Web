@@ -1,0 +1,1035 @@
+/*
+* @Author: 一腔孤勇
+* @Date:   2021-03-20 17:29:27
+* @Last Modified by:   一腔孤勇
+* @Last Modified time: 2021-03-24 20:31:25
+*/
+#content {
+  width: 100%;
+  padding: 200px 15% 40px 15%;
+  position: relative;
+}
+#content h1 {
+  width: 100%;
+  color: #54B877;
+  font-family: 'PingFangBold';
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 4rem;
+}
+@media screen and (max-width: 768px) {
+  #content h1 {
+    font-size: 3rem;
+  }
+
+}
+#content>div{
+  margin-bottom: 130px;
+}
+#content>div:last-child{
+  margin-bottom: 20px;
+}
+#backgroundOne{
+  position: absolute;
+  z-index: -1;
+  width: 16%;
+  height: auto;
+  top: -2%;
+  left: 0;
+}
+#backgroundTow{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 15%;
+  height: auto;
+}
+#backgroundThree{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 30%;
+  left: 0;
+}
+#backgroundFour{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 40%;
+  right: 0;
+}
+#backgroundFive{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 50%;
+  left: 0;
+}
+#backgroundSix{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 60%;
+  right: 0;
+}
+#backgroundSeven{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 70%;
+  left: 0;
+}
+#backgroundEight{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 80%;
+  right: 0;
+}
+#backgroundNine{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  top: 90%;
+  left: 0;
+}
+#backgroundelEighteen{
+  position: absolute;
+  width: 40%;
+  height: auto;
+  right: 0;
+  bottom: 0;
+}
+.backgroundImg{
+  display: none;
+}
+
+#BACKGROUND{
+  position: relative;
+  z-index: 1;
+}
+#BACKGROUND>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  font-family: 'PingFangRegular';
+}
+#BACKGROUND>ul>li{
+  width: 33%;
+  padding: 20px;
+  text-align: center;
+}
+#BACKGROUND h3 {
+  font-family: 'PingFangBold';
+  font-size: 4em;
+  color: #FF9981;
+}
+#BACKGROUND span{
+  color: #54B877;
+  font-family: 'PingFangRegular';
+  font-size: 2rem;
+}
+#BACKGROUND>p{
+  text-align: center;
+  margin-top: 50px;
+  color: #333333;
+  font-size: 1.5rem;
+}
+#BACKGROUND>p>mark{
+  background: none;
+  font-weight: bold;
+  color: red;
+}
+@media screen and (max-width: 1400px) {
+    #BACKGROUND>p{
+      font-size: 0.8rem;
+    }
+    #BACKGROUND span{
+      font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #content{
+      padding: 200px 6% 40px 6%;
+    }
+    #BACKGROUND>p{
+      font-size: 0.8rem;
+      text-align: left;
+      line-height: 1.4rem;
+      text-align: center;
+    }
+    #BACKGROUND span{
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+}
+
+
+#CONCEPT>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  font-family: 'PingFangRegular';
+}
+#CONCEPT>ul>li{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #54B877
+}
+#CONCEPT>ul>li>p{
+  width: 50%;
+  margin-top: 14px;
+  font-size: 2rem;
+}
+#CONCEPT>p{
+  text-align: center;
+  color: #54b877;
+  font-size: 1.8rem;
+}
+#CONCEPT>h2{
+  margin-top: 30px;
+  color: #FF9981;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'PingFangSC-Semibold';
+}
+@media screen and (max-width: 1400px) {
+  #CONCEPT>ul>li>p {
+    font-size: 1.2rem;
+  }
+  #CONCEPT>ul>li>img{
+    width: 20%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #CONCEPT>ul>li>p{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #CONCEPT>ul>li>img{
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  #CONCEPT>ul>li>p{
+    font-size: 1rem;
+  }
+  #CONCEPT>p{
+    font-size: 1.3rem;
+  }
+}
+
+#BENEFITS>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+#BENEFITS>ul>li{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#BENEFITS>ul>li>img{
+  width: 50%;
+}
+#BENEFITS>ul>li>span{
+  color: #54B877;
+  font-size: 1.5rem;
+  font-family: 'PingFangMedium'; 
+}
+#BENEFITS>ul>li>p{
+  color: #666666;
+  font-size: 1rem;
+  font-family: 'PingFangRegular';
+}
+@media screen and (max-width: 1300px) {
+  #BENEFITS>ul>li>p{
+    font-size: 0.8rem;
+  }
+  #BENEFITS>ul>li>span{
+    font-size: 1rem;
+  }
+  #BENEFITS>ul>li>img{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #BENEFITS>ul>li>img{
+    width: 40%;
+  }
+  #BENEFITS>ul>li>span{
+    font-size: 0.8rem;
+  }
+}
+
+#OURCOMMUNITY{
+  position: relative;
+  z-index: 1;
+  font-family: 'PingFangRegular';
+} 
+#OURCOMMUNITY>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+#OURCOMMUNITY>ul>li{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+#OURCOMMUNITY>ul>li>img{
+  width: 50%;
+}
+#OURCOMMUNITY>ul>li>span{
+  color: #54B877;
+  font-size: 1.5rem;
+}
+#OURCOMMUNITY>ul>li>p{
+  color: #666666;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  #OURCOMMUNITY>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #OURCOMMUNITY>ul>li{
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  #OURCOMMUNITY>ul>li>img{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #OURCOMMUNITY>ul>li{
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  #OURCOMMUNITY>ul>li>img{
+    width: 30%;
+  }
+  #OURCOMMUNITY>ul>li>span{
+    color: #54B877;
+    font-size: 1.5rem;
+  }
+  #OURCOMMUNITY>ul>li>p{
+    color: #666666;
+    font-size: 1rem;
+  }
+}
+
+
+#APPLICATION{
+  text-align: center;
+  font-family: 'PingFangMedium';  
+}
+#APPLICATION>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.6rem;
+}
+#APPLICATION>div>img{
+  width: 40%;
+  height: auto;
+}
+#APPLICATION>div>div{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#APPLICATION>div>div>img{
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#APPLICATION>div>div>p{
+  color: #54B877;
+}
+#APPLICATION>p{
+  margin-top: 40px;
+  color: #54B877;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1300px) {
+  #APPLICATION>div>div>p{
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #APPLICATION>div>div>p{
+    font-size: 1rem;
+  }
+  #APPLICATION>p{
+    font-size: 1rem;
+  }
+}
+
+#TECHNOLOGY{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  font-family: 'PingFangRegular';
+}
+#TECHNOLOGY>img{
+  width: 100%;
+  height: auto;
+}
+#TECHNOLOGY>ul{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#TECHNOLOGY>ul>li{
+  width: 18%;
+  color: #54B877;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#TECHNOLOGY>ul>li>img{
+  height: auto;
+  margin-bottom: 64px;
+}
+#TECHNOLOGY>ul>li>span{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+#TECHNOLOGY>ul>li>span:last-child{
+  margin-bottom: -76px;
+}
+@media screen and (max-width: 1100px) {
+  #TECHNOLOGY>ul>li>span{
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+  #TECHNOLOGY>ul>li>img{
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #TECHNOLOGY>ul>li>span:last-child{
+    margin-bottom: -50px;
+  }
+  #TECHNOLOGY{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #TECHNOLOGY>img{
+    display: none;
+  }
+  #TECHNOLOGY>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #TECHNOLOGY>ul>li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #TECHNOLOGY>ul>li>span:last-child{
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1000px){
+  
+  #TECHNOLOGY>ul>li>span{
+      font-size: 1rem;
+  }
+  #TECHNOLOGY>ul>li>span:last-child{
+      font-size: 1rem;
+      margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #TECHNOLOGY{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #TECHNOLOGY>img{
+    display: none;
+  }
+  #TECHNOLOGY>ul{
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #TECHNOLOGY>ul>li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #TECHNOLOGY>ul>li>span{
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1000px){
+  #TECHNOLOGY>ul>li>span{
+      font-size: 1rem;
+  }
+
+}
+
+#PRODUCTSHOW{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#PRODUCTSHOW>iframe{
+  width: 70%;
+  height: 61vh;
+}
+
+@media screen and (max-width: 1300px) {
+  #PRODUCTSHOW>iframe{
+    width: 80%;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  #PRODUCTSHOW>iframe{
+    width: 80%;
+    height: 30vh;
+  }
+}
+
+#PRICING{
+  position: relative;
+  z-index: 1;
+  padding: 10px 30px 20px 30px;
+}
+#PRICING>div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#PRICING>div>ul{
+  min-height: 500px;
+  width: 40%;
+
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #ababab;
+  color: #Fff;
+  text-align: center;
+  background: #Fff;
+}
+#PRICING>div>ul>li{
+  padding: 30px 10px 0 20px;
+}
+#PRICING>div>ul>li:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #68E0A9 , #3DB366);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-family: 'PingFangMedium';
+}
+#PRICING>div>ul>li:first-child>p{
+  font-size: 1.3rem;
+}
+#PRICING>div>ul>li:first-child>span{
+  font-family: 'PingFangBold';
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: -35px;
+  background: linear-gradient(to bottom right, #68E0A9 , #3DB366);
+  font-size: 1rem;
+}
+#PRICING>div>ul>li:last-child{
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 0 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #666666;
+  line-height: 1rem;
+  text-align: center;
+}
+#PRICING>div>ul>li:last-child>p{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #666;
+  font-family: 'PingFangMedium';
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 1400px){
+  #PRICING>div>ul>li:first-child>p{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1100px){
+  #PRICING>div>ul{
+    width: 40%;
+    text-align: center;
+  }
+  #PRICING>div>ul>li:first-child>p{
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  #PRICING>div>ul>li:last-child>p{
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  #PRICING>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #PRICING>div>ul{
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  #PRICING>div>ul{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #PRICING>div>ul>li:first-child>p{
+    font-size: 0.6rem;
+  }
+  #PRICING>div>ul>li:last-child>p{
+    line-height: 1.5rem;
+  }
+  #PRICING>div>ul>li:last-child>p{
+    font-size: 1rem;
+  }
+  #PRICING>div>ul>li:first-child>p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #PRICING>div>ul>li:first-child>span{
+    font-size: 1rem;
+  }
+}
+
+
+#TEAM>div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  font-family: 'PingFangMedium';
+}
+#TEAM>div>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#TEAM>div>div>img{
+  width: 50%;
+  height: auto;
+}
+#TEAM>div>div>h3{
+  color: #54B877;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'PingFangMedium'; 
+}
+#TEAM>div>div>span{
+  margin-bottom: 10px;
+  color: #333333;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  #TEAM>div>div>span{
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  #TEAM>div>div>span{
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+}
+
+#SUPPORTER{
+  position: relative;
+  z-index: 5;
+}
+#SUPPORTERPeople{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+#SUPPORTERPeople>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-family: 'PingFangRegular';
+  text-align: center;
+}
+#SUPPORTERPeople>ul>li{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#SUPPORTERPeople>ul>li>img{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+#SUPPORTERPeople>ul>li>h3{
+  margin-bottom: 10px;
+  font-family: 'PingFangSC-Semibold';
+}
+#SUPPORTERPeople>ul>li>p>a{
+  color: #54B877;
+}
+@media screen and (max-width: 1100px) {
+  #SUPPORTERPeople>ul>li>p>a{
+    font-size: 0.8rem;
+  }
+}
+
+.SUPPORTERSponsor{
+  width: 100%;
+}
+
+.certificate{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.certificate>img{
+  width: 100%;
+  height: auto;
+}
+.trademark{
+  width: 100%;
+}
+.trademark>ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trademark>ul>li{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-bottom: 20px;
+}
+.trademark>ul>li>img{
+  width: auto;
+  height: 8vw;
+  webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.trademark>ul>li>img:hover{
+  webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+}
+
+.SUPPORTERSponsor2{
+  display: none;
+}
+
+.TESTER{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  font-family: 'PingFangRegular';
+}
+.TESTER>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.TESTERLi{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.TESTERLiDiv{
+  width: 30%;
+  transition: 0.3s;
+  position: relative;
+}
+.TESTERLi>div>p{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 1rem;
+  color: #Fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.TESTERImg{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.TESTERLiDiv:hover{
+  width: 35%;
+  border-radius: 20px;
+}
+.TESTERLiDiv:hover .TESTERImg{
+  border-radius: 10px;
+}
+.TESTERLiDiv:hover .TESTERP{
+  opacity: 1;
+}
+.TESTERLi2{
+  display: flex;
+  flex-direction: column;
+}
+.TESTERImg2{
+  margin-bottom: 100px;
+  width: 80%;
+}
+.TESTERImg2:hover{
+  width: 90%;
+  height: auto;
+}
+
+.SUPPORTERSponsor2{
+  display: none;
+}
+.SUPPORTERSponsor3{
+  display: block;
+}
+.SUPPORTERDivr3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SUPPORTERDivr3>img{
+  width: 80%;
+}
+.SUPPORTERImg3{
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#NEWS>ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PingFangRegular';
+}
+#NEWS>ul>li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+#NEWS>ul>li>a{
+  color: #666666;
+}
+#NEWS>ul>li>span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.rectangle{
+  width: 2px;
+  height: 30px;
+  background: #54B877;
+}
+.circular{
+  border-radius: 50%;
+  /*background: #83E0A3;*/
+  border: 2px solid #83E0A3;
+  padding: 4px;
+}
+#NEWS>ul>li>a>p>span:first-child{
+  color: #54B877;
+}
+@media screen and (max-width: 768px) {
+  #NEWS>ul>li{
+    font-size: 1rem;
+  }
+}
+
+#CONTACT{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PingFangRegular';
+}
+#CONTACT>ul>li{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#CONTACT>ul>li>img{
+  width: 20%;
+  height: auto;
+  margin-left: 30px;
+  cursor: pointer;
+}
+#CONTACT>p{
+  text-align: center;
+  color: #54B877;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+#LOCATION{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'PingFangRegular';
+}
+#LOCATION>div{
+  width: 50%;
+  position: relative;
+}
+#LOCATION>div>img{
+  width: 100%;
+}
+#LOCATION>div>span{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-size: 1rem;
+  color: #Fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#LOCATION>div>span>img{
+  width: 4%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1388px) {
+  #LOCATION>div{
+    width: 80%;
+  }
+  #LOCATION>div>span{
+     left: 20px;
+     font-size: 0.8rem;
+  }
+}
